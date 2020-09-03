@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Covid-19 Research Collective</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="style5.css">
+
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <div id="utd_logo"><img src="img/UTD_LOGO_ROUND.png" alt="utd_logo" width="95%" /></div>
+        <h3>COVID-19 RESEARCH COLLECTIVE</h3>
+      </div>
+
+      <ul class="list-unstyled components">
+
+        <li>
+          <a href="stats.html">HOME</a>
+        </li>
+        <li>
+          <a href="about_us.html">ABOUT</a>
+        </li>
+
+        <li class="active">
+          <a href="projects.html">PROJECTS</a>
+        </li>
+        <li>
+          <a href="contact.html">CONTACT US</a>
+        </li>
+      </ul>
+
+      <ul class="list-unstyled CTAs">
+
+        <li>
+          <form class="form-inline active-cyan-4">
+            <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </form>
+
+        </li>
+      </ul>
+
+    </nav>
+    <!-- Page Content Holder -->
+    <div id="content">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+          <button type="button" id="sidebarCollapse" class="navbar-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-align-justify"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Case</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recovery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Fatality</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <h1></h1>
+        <div class="row">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
+          </div>
+        </div>
+        <div>
+          <h1><br />COVID 19 Modelling and Predictions</h1>
+          <!--Carousel Wrapper-->
+          <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+            <!--Controls-->
+            <!--    <div class="">
+              <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+              <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+            </div> -->
+            <!--/.Controls-->
+
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+              <!--First slide-->
+              <div class="carousel-item active">
+
+                <div class="col-md-3"  style="float: left">
+                  <div class="card mb-2" style="height: 550px;">
+                    <img class="card-img-top" src="img/Qiwei.png" height=150px width=100px alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Dr Qiwei Li</h4>
+                      <p class="card-text">We develop this web app to help DFW policy-makers assess the impact of different interventions on the spread of COVID-19 in the DFW area.</p>
+                      <a class="btn btn-primary" href="https://qiwei.shinyapps.io/PredictCOVID19/">Click Here</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3"  style="float: left">
+                  <div class="card mb-2" style="height: 550px;">
+                    <img class="card-img-top" src="img/Wade.png" height=150px width=100px alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Dr. Wade Fagen-Ulmschneider</h4>
+                      <p class="card-text">91-DIVOC is home to many data-forward, high-quality, interactive, and informative visualizations during the pandemic.</p>
+                      <a class="btn btn-primary" href="https://91-divoc.com/">Click Here</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="col-md-3" style="float: left">
+                  <div class="card md-2" style="height: 550px;">
+                    <img class="card-img-top" src="img/Covid.png" height=150px width=100px alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Covid Visualization</h4>
+                      <p class="card-text">Texas specific visualizaion related to every county in Texas along with the Hopital resource utilization during the Pandemic</p>
+                      <a class="btn btn-primary" href="https://dfwcovid19.utdallas.edu/">Click Here</a>
+                    </div>
+                  </div>
+                </div> -->
+
+                <div class=" col-md-3"  style="float: left">
+                        <div class="card md-2" style="height: 550px;">
+                          <img class="card-img-top" src="img/IUPR.png" height=150px width=100px alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">The Institute of Urban Policy Research at the University of Texas at Dallas</h4>
+                            <p class="card-text">This report shows the number and the rate of confirmed infections per 100,000 population.</p>
+                            <a class="btn btn-primary" href="https://urbanpolicyresearch.org/covid19/county-data-dashboard">Click Here</a>
+                          </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                  </div>
+                  <!--/.First slide-->
+
+                  <!--Second slide-->
+                  <!-- <div class="carousel-item">
+
+                    <div class="col-md-3" style="float:left">
+                      <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3" style="float:left">
+                      <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3" style="float:left">
+                      <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                  </div> -->
+                  <!--/.Second slide-->
+
+
+
+                </div>
+                <!--/.Slides-->
+
+              </div>
+              <!--/.Carousel Wrapper-->
+
+            </div>
+            <div>
+              <!-- <h1><br />Covid 19 Data Visualization</h1> -->
+              <!--Carousel Wrapper-->
+              <div id="multi-item-example-1" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                <!--Controls-->
+                <!--    <div class="">
+              <a class="btn-floating" href="#multi-item-example-1" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+              <a class="btn-floating" href="#multi-item-example-1" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+            </div> -->
+                <!--/.Controls-->
+
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                  <!--First slide-->
+                  <div class="carousel-item active">
+                    <!-- <div class="col-md-3" style="float:left">
+                      <div class="card md-2">
+                        <img class="card-img-top" src="img/Covid.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Covid Visualization</h4>
+                          <p class="card-text">Texas specific visualizaion related to every county in Texas along with the Hopital resource utilization during the Pandemic</p>
+                          <a class="btn btn-primary" href="https://dfwcovid19.utdallas.edu/">Click Here</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" col-md-3" style="float:left">
+                            <div class="card md-2">
+                              <img class="card-img-top" src="img/IUPR.png" alt="Card image cap">
+                              <div class="card-body">
+                                <h4 class="card-title">The Institute of Urban Policy Research at the University of Texas at Dallas</h4>
+                                <p class="card-text">This report shows the number and the rate of confirmed infections per 100,000 population.</p>
+                                <a class="btn btn-primary" href="https://urbanpolicyresearch.org/covid19/county-data-dashboard">Click Here</a>
+                              </div>
+                            </div>
+                        </div> -->
+                    <!-- <div class="col-md-3" style="float:left">
+                      <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Prof. Lorem</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div> -->
+
+                    <!-- <div class="col-md-3" style="float:left">
+                      <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3" style="float:left">
+                      <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Prof. Ipsum</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3" style="float:left">
+                      <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div> -->
+
+                  </div>
+                  <!--/.First slide-->
+
+                  <!--Second slide-->
+                  <!-- <div class="carousel-item">
+
+                    <div class="col-md-3" style="float:left">
+                      <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3" style="float:left">
+                      <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3" style="float:left">
+                      <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3" style="float:left">
+                      <div class="card mb-2">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                          <a class="btn btn-primary">Button</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div> -->
+                  <!--/.Second slide-->
+
+
+
+                </div>
+                <!--/.Slides-->
+
+              </div>
+              <!--/.Carousel Wrapper-->
+
+            </div>
+
+
+
+          </div>
+          <div style="margin-top:150px;">
+
+            <footer class="bg-dark text-white mt-4 " style="  position: relative; height: 150px; bottom: 0; width: 100%;">
+              <div class="container-fluid py-3">
+                <div class="row">
+                  <div class="col-md-3">
+                    <h5>University of Texas at Dallas</h5>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6"> Phone Number
+                    <span class="small">
+                      <br>Email
+                      <br>Physical Address
+
+                    </span>
+                  </div>
+
+
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- jQuery CDN - Slim version (=without AJAX) -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <!-- Popper.JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('#sidebarCollapse').on('click', function() {
+            $('#sidebar').toggleClass('active');
+            $(this).toggleClass('active');
+          });
+        });
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Covid-19 Research Collective</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="style5.css">
+
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
+  <!-- <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=xfhhaTThl11qYVrqLZii6w8qE5ggnhrY&__ec_v__=20190126"></script> -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/bmap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <div id="utd_logo"><img src="img/UTD_LOGO_ROUND.png" alt="utd_logo" width="95%" /></div>
+        <h3>COVID-19 RESEARCH COLLECTIVE</h3>
+      </div>
+
+      <ul class="list-unstyled components">
+
+        <li>
+          <a href="stats.html">HOME</a>
+        </li>
+        <li>
+          <a href="about_us.html">ABOUT</a>
+        </li>
+
+        <li class="active">
+          <a href="projects.html">PROJECTS</a>
+        </li>
+        <li>
+          <a href="contact.html">CONTACT US</a>
+        </li>
+      </ul>
+
+      <ul class="list-unstyled CTAs">
+
+        <li>
+          <form class="form-inline active-cyan-4">
+            <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+            <i class="fas fa-search" aria-hidden="true"></i>
+          </form>
+
+        </li>
+      </ul>
+
+    </nav>
+    <!-- Page Content Holder -->
+    <div id="content">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+          <button type="button" id="sidebarCollapse" class="navbar-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-align-justify"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Case</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recovery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Fatality</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Test</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container" style="height:100%;">
+
+        <!-- Subtopics row-->
+        <div id="containerGraph1" style="height:100%;"></div>
+
+
+      </div>
+      <div style="margin-top:150px;">
+
+        <footer class="bg-dark text-white mt-4 " style=" position: relative; height: 150px; bottom: 0; width: 100%;">
+          <div class="container-fluid py-3">
+            <div class="row">
+              <div class="col-md-3">
+                <h5>University of Texas at Dallas</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"> Phone Number
+                <span class="small">
+                  <br>Email
+                  <br>Physical Address
+
+                </span>
+              </div>
+
+
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#sidebarCollapse').on('click', function() {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    var dom = document.getElementById("containerGraph1");
+    var myChart = echarts.init(dom);
+
+    var Dallas = "Dallas";
+    var bodyData = {
+      'placeValue': Dallas
+    };
+
+    fetch('http://127.0.0.1:5000/about', {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(bodyData)
+      })
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        console.log('data- ', data);
+
+        var confirmedLast7daysKeys = [],
+          confirmedLast7daysValues = [];
+
+        var currentDate = new Date();
+        var date = currentDate.getDate() - 1;
+        var month = currentDate.getMonth() + 1;
+        var year = ('' + currentDate.getFullYear()).slice(2, 4);
+
+        var i = 1;
+        while (i <= 31) {
+          if (date == 0) {
+            date = 31;
+            month = month - 1;
+            continue;
+          }
+          console.log("date-------", date);
+          console.log("month-------", month);
+
+          var dateStr = month + '/' + date + '/' + year;
+          console.log(dateStr)
+          confirmedLast7daysKeys.push(dateStr)
+          confirmedLast7daysValues.push(data.confirmed[dateStr])
+          date = date - 1;
+          i++;
+        }
+
+        confirmedLast7daysKeys.reverse()
+        confirmedLast7daysValues.reverse()
+
+        console.log(confirmedLast7daysKeys);
+        console.log(confirmedLast7daysValues);
+        // var dateStr = month + '/' + date + '/' + year;
+        // console.log(dateStr)
+
+
+        var app = {};
+        option = null;
+        option = {
+          color: ['#3398DB'],
+          tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+              type: 'shadow' // 'line' | 'shadow'
+            }
+          },
+          grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+          },
+          xAxis: [{
+            type: 'category',
+            data: confirmedLast7daysKeys,
+            axisTick: {
+              alignWithLabel: true
+            }
+          }],
+          yAxis: [{
+            type: 'value'
+          }],
+          series: [{
+            name: '',
+            type: 'bar',
+            barWidth: '60%',
+            data: confirmedLast7daysValues
+          }]
+        };;
+        if (option && typeof option === "object") {
+          myChart.setOption(option, true);
+        }
+      });
+  </script>
+
+</body>
+
+</html>
